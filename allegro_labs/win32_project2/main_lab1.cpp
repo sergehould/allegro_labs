@@ -17,7 +17,7 @@
  *****************************************************************************/
 
 #include <allegro.h>
-#include<stdio.h>
+#include <stdio.h>
 
 #define     BG_COLOR    0x001F90
 
