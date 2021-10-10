@@ -31,7 +31,10 @@ int main(void) {
 	clear_to_color(screen, BG_COLOR);
     	textprintf_ex(screen,font, 1, 1,0X00FF00, BG_COLOR,  "Hello World!");
     	textprintf_ex(screen,font, 1, 20,0X00FF00, BG_COLOR,  "Type ESC to exit");
-	while (!key[KEY_ESC]);
+	while (!key[KEY_ESC]){
+        	textprintf_ex(screen,font, 320, 240,0X00FF00, BG_COLOR,  "count %d", count++);
+        	rest(500); // blocks for a delay of 500 mS
+	}
 	allegro_exit();
 	return 0;
 }
