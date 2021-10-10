@@ -29,8 +29,8 @@ int main(void) {
 	install_keyboard();
 	set_keyboard_rate(500, 600);
 	clear_to_color(screen, BG_COLOR);
-    textout_ex(screen,font, "Type ESC to exit", 1, 20,0X00FF00, BG_COLOR);
-    textout_ex(screen,font, "Hello World!", 1, 1,0X00FF00, BG_COLOR);
+    	textprintf_ex(screen,font, 1, 1,0X00FF00, BG_COLOR,  "Hello World!");
+    	textprintf_ex(screen,font, 1, 20,0X00FF00, BG_COLOR,  "Type ESC to exit");
 	while (!key[KEY_ESC]);
 	allegro_exit();
 	return 0;
