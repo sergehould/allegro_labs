@@ -23,6 +23,7 @@
 
 int main(void) {
 
+	int count =0;
 	allegro_init();
 	set_color_depth(24);
 	set_gfx_mode(GFX_AUTODETECT_WINDOWED, 640, 480, 0, 0);
